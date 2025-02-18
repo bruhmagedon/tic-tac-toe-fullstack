@@ -1,0 +1,20 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/coverage": true,
+    "**/.next": false,
+    "**/node_modules": false,
+    "**/.env": true,
+    "**/next-env.d.ts": true,
+    "**/next.config.ts": true,
+    "**/pnpm-lock.yaml": false,
+    "**/postcss.config.mjs": true,
+    "**/docker-compose.yml": true,
+    "**/public": true,
+    "**/src/app/favicon.ico": true,
+    "**/README.md": true,
+    "**/components.json": true,
+    ".gitignore": true,
+    "**/prisma/migrations": false
+  }
+}

@@ -1,9 +1,10 @@
-import { prisma } from "@/shared/lib/db";
-import { Button } from "@/shared/ui/button";
+import { GamesList } from "@/features/games-list/containers/games-list";
 
 export default async function Home() {
-  const games = await prisma.game.findMany();
-  console.log(games);
-
-  return <Button>Click</Button>;
+  return (
+    <div className="flex flex-col gap-8 container mx-auto pt-[100px]">
+      <h1 className="text-4xl font-bold">Игры</h1>
+      <GamesList />
+    </div>
+  );
 }
